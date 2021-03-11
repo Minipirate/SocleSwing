@@ -1,6 +1,5 @@
 package fr.diginamic.services.exemples;
 
-import java.awt.Color;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -27,6 +26,7 @@ public class Exemple5Service extends MenuService {
 			SqlUtils.executeFile("exemple.sql", em);
 		}
 	}
+	
 
 	@Override
 	public void traitement() {
@@ -43,7 +43,7 @@ public class Exemple5Service extends MenuService {
 		console.clear();
 		console.print("<h1 class='bg-green'><center>Liste des clients</center></h1>");
 
-		String html = "<table cellspacing=0>"
+		String html = "<table cellspacing=0>" //ouverture d'un tableau 
 				+ "<tr class='bg-green'><td>&nbsp;</td><td>&nbsp;</td><td>Nom</td><td>Prénom</td></tr>";
 		for (Personne c : clients) {
 			html += "<tr>"

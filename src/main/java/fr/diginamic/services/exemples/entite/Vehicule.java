@@ -43,15 +43,18 @@ public class Vehicule implements Selectable {
 	/**
 	 * @return the id
 	 */
-	public Long getId() {
-		return id;
-	}
+	
 	/**
 	 * @param id the id to set
 	 */
 	public void setId(Long id) {
 		this.id = id;
 	}
+	public Vehicule(Long id) {
+		super();
+		this.id = id;
+	}
+
 	/**
 	 * @return the immatriculation
 	 */
@@ -87,6 +90,12 @@ public class Vehicule implements Selectable {
 	 */
 	public void setModele(String modele) {
 		this.modele = modele;
+	}
+
+	@Override
+	public Integer getId() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
